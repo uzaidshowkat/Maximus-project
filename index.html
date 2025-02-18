@@ -16,11 +16,13 @@
             align-items: center;
             background-color: black;
             color: white;
-            
+            padding-left: 50px;
+            padding-right: 50px;
+            justify-content: space-between;
         }
         .left-section
         {
-            
+            flex:1;
         }
         .logo
         {
@@ -28,21 +30,67 @@
             font-size: 20px;
             color: rgb(150,44,44);
             font-weight: 700;
+            font-size: 30px;
+        }
+        .middle-section
+        {
+            flex: 6;
+            padding-left: 180px;
+            padding-right: 180px;
+            
         }
         .middle-section ul
         {
-            
             display: flex;
+            align-items: center;
             flex-direction: row;
-            
             list-style: none;
             
         }
         .middle-section ul li
         {
-            margin: 5px;
+            font-family: Sen, sans-serif;
+            margin-right: 30px;
+            font-weight: bold;
         }
-        
+        .right-section
+        {
+            font-family: Sen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 2;
+            
+        }
+        .profile-picture
+        {
+            height: 40px;
+            border-radius: 30px;
+            object-fit: cover;
+            object-position: center;
+            margin-left: 65px;
+        }
+        .profile
+        {
+            padding-left: 18px;
+            font-weight: 200;
+            padding-right: 2px;
+        }
+        .settings
+        {
+            padding-left: 22px;
+            font-weight: 200;
+        }
+        .main-image
+        {
+            position: relative;
+        }
+        .django-image
+        {
+            position: absolute;
+            height: 100px;
+            top: 30px;
+        }
     </style>
 </head>
 <body style="height: 3000px; margin: 0;">
@@ -60,8 +108,18 @@
             </ul>            
         </div>
         <div class="right-section">
-            <div></div>
+            <img class="profile-picture" src="Images/Uzaid Photo.jpg">
+            <h4 class="profile">Profile</h4>
+            <h6>&#9660;</h6>
+            <h6 class="settings">Settings</h6>
         </div>
+    </div>
+
+    <div>
+        <div>
+            <img class="main-image" src="Images/Front image.jpg">
+        </div>
+        <div> <img class="django-image" src="Images/Django.png"></div>
     </div>
 </body>
 </html>
