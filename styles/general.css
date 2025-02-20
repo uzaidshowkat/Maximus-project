@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 3000px;
+    font-family: Sen, Sans-serif;
+}
+
+.container {
+    background-color: #151515;
+    width: 100%;
+    margin-left: 50px;
+    font-family: Roboto;
+}
+
+
+.content-container {
+    position: relative;
+    height: 310px;
+    width: 100%;
+    background-color: tomato;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../Images/Front image.jpg');
+}
+
+.featured-context
+{
+    position: absolute;
+    width: 35%;
+
+}
+
+.django-image {
+    width: 200px;
+    top: 50px;
+    left: 50px;
+}
+
+
+.featured-disc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    color: rgb(201, 200, 197);
+    font-size: 16px;
+}
+
+.watch-button {
+    font-family: arial;
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.movielistcontainer
+{
+    display: flex;
+    flex-direction: column;
+
+}
+.movielisttitle {
+    color: white;
+    padding-left: 20px;
+    
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.movie
+{
+    width: 270px;
+    height: 200px;
+}
+
+.img
+{
+    width: 100%;
+    border-radius: inherit;
+}

@@ -1,0 +1,100 @@
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    justify-content: center;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.logo {
+    font-family: sen, sans-serif;
+    font-size: 20px;
+    color: rgb(150, 44, 44);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.middle-section {
+    flex: 6;
+}
+
+.middle-section ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+}
+
+.middle-section ul li {
+    font-family: Sen, sans-serif;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+@media (max-width:940px) {
+    .middle-section {
+        display: none;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
+
+.right-section {
+    font-family: Sen, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 2;
+    padding-right: 20px;
+
+}
+
+.profile-picture {
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    padding-left: 18px;
+    font-weight: 200;
+    padding-right: 2px;
+}
+
+.settings {
+    padding-left: 22px;
+    font-weight: 200;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    padding-top: 60px;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.leftmenuitems {
+    margin-bottom: 40px;
+    font-size: 20px;
+}

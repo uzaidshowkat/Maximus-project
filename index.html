@@ -1,149 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <script src="https://kit.fontawesome.com/577c599e43.js" crossorigin="anonymous"></script>
 
     <title>Maximus</title>
-    <style>
-        .header
-        {
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background-color: black;
-            color: white;
-            padding-left: 50px;
-            justify-content: center;
-        }
-        .left-section
-        {
-            flex:1;
-        }
-        .logo
-        {
-            font-family: sen, sans-serif;
-            font-size: 20px;
-            color: rgb(150,44,44);
-            font-weight: 700;
-            font-size: 30px;
-        }
-        .middle-section
-        {
-            flex: 6;                
-        }
-        .middle-section ul
-        {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            list-style: none;
-            justify-content: center;
-            
-        }
-        .middle-section ul li
-        {
-            font-family: Sen, sans-serif;
-            margin-right: 30px;
-            font-weight: bold;
-        }
-        @media (max-width:940px)
-        {
-            .middle-section
-            {
-                display: none;
-            }
-            .logo
-            {
-                font-size: 22px;
-            }
-        }    
-        .right-section
-        {
-            font-family: Sen, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: right;
-            flex: 2;
-            padding-right: 20px;
-            
-        }
-        .profile-picture
-        {
-            height: 35px;
-            width: 35px;
-            border-radius: 30px;
-            object-fit: cover;
-            object-position: center;
-        }
-        .profile
-        {
-            padding-left: 18px;
-            font-weight: 200;
-            padding-right: 2px;
-        }
-        .settings
-        {
-            padding-left: 22px;
-            font-weight: 200;
-        }
-        .content-container
-        {
-            margin-left: 50px;
-        }
-        .featured-context
-        {
-            height: 350px;
-            background-color: tomato;
-            padding: 50px;
-            background: linear-gradient(to bottom, rgba(0,0,0,0),#151515), url('Images/Front image.jpg');
-            position: relative;
-            
-        }
-        .django-image
-        {
-            position: absolute;
-            height: 85px;
-            top: 50px;
-            left: 50px;
-        }
-        .sidebar
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50px;
-            height: 100%;
-            background-color: black;
-            color: white;
-            position: fixed;
-            padding-top: 10px;      
-        }
-        .leftmenuitems
-        {
-            margin-bottom: 40px;
-            font-size: 20px;
-        }
-        .featured-disc
-        {
-            width: 40%;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 0;
-            margin-right: 0;
-        }
-    </style>
+
 </head>
-<body style="margin: 0;
-height: 3000px;
-">
+
+<body>
     <div class="header">
         <div class="left-section">
-           <h1 class="logo">Maximus</h1>
+            <h1 class="logo">maximus</h1>
         </div>
         <div class="middle-section">
             <ul>
@@ -152,7 +31,7 @@ height: 3000px;
                 <li>Series</li>
                 <li>Popular</li>
                 <li>Trends</li>
-            </ul>            
+            </ul>
         </div>
         <div class="right-section">
             <img class="profile-picture" src="Images/Uzaid Photo.jpg">
@@ -172,12 +51,36 @@ height: 3000px;
         <i class="leftmenuitems fa-solid fa-cart-shopping"></i>
     </div>
 
+    <div class="container">
         <div class="content-container">
-            <div class="featured-context">            
+            <div class="featured-context">
                 <img class="django-image" src="Images/Django.png">
-                <p class="featured-disc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolor eum aspernatur</p>
+                <p class="featured-disc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolor eum
+                    aspernatur</p>
+                <button class="watch-button">WATCH</button>
             </div>
-            
         </div>
+        <div class="movielistcontainer">
+            <h1 class="movielisttitle">NEW RELEASES</h1>
+            <div class="cards">
+                <div class="movie">
+                    <img class="img" src="Images/her.jpg">
+                </div>
+                <div class="movie">
+                    <img class="img" src="Images/her.jpg">
+                </div>
+                <div class="movie">
+                    <img class="img" src="Images/her.jpg">
+                </div>
+                <div class="movie">
+                    <img class="img" src="Images/her.jpg">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
