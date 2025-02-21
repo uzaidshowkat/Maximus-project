@@ -99,6 +99,19 @@ body {
     width: 270px;
     height: 200px;
     border-radius: 10px;
+    transition: transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+    position: relative;
+}
+.movie:hover .img
+{
+    transform: scale(1.1);
+}
+
+.movie:hover .movieTitle,
+.movie:hover .movieDesc,
+.movie:hover .miniWatch {
+    opacity: 1;
 }
 
 .img
@@ -107,4 +120,43 @@ body {
     height: 200px;
     object-fit: cover;
     border-radius: inherit;
+}
+
+.movieTitle {
+    background-color: #333;
+    font-size: 32px;
+    padding: 0 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+.movieDesc {
+    background-color: #333;
+    font-size: 14px;
+    padding:10px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 200px;
+    opacity: 0;
+    transition: 1s ease;
+    border-radius: 10px;
+}
+.miniWatch {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #151515;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 1s ease;
 }
