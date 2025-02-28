@@ -19,6 +19,7 @@
     color: rgb(150, 44, 44);
     font-weight: 700;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .middle-section {
@@ -38,6 +39,7 @@
     font-family: Sen, sans-serif;
     margin-right: 30px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width:940px) {
@@ -66,17 +68,20 @@
     border-radius: 30px;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
 
 .profile {
     padding-left: 18px;
     font-weight: 200;
     padding-right: 2px;
+    cursor: pointer;
 }
 
 .settings {
     padding-left: 22px;
     font-weight: 200;
+    cursor: pointer;
 }
 
 .sidebar {
@@ -97,4 +102,5 @@
 .leftmenuitems {
     margin-bottom: 40px;
     font-size: 20px;
+    cursor: pointer;
 }
